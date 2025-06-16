@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartVision - Assistência Técnica</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: white;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 10px;
+    }
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      border-left: 5px solid #00ffcc;
+      padding-left: 10px;
+      color: #00ffcc;
+    }
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .servico {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #222;
+    }
+    .servico h3 {
+      margin-top: 0;
+      color: #79f2e8;
+    }
+    .contato form {
+      display: flex;
+      flex-direction: column;
+    }
+    .contato input, .contato textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    .contato button {
+      background-color: #00ffcc;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .contato button:hover {
+      background-color: #00ccaa;
+    }
+    footer {
+      text-align: center;
+      background-color: #111;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      header img {
+        width: 100%;
+      }
+      nav a {
+        margin: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="IMG_2514.jpeg" alt="Logo da SmartVision" />
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>A <strong>SmartVision</strong> é especializada em conserto de celulares e computadores. Garantimos qualidade, peças originais e atendimento rápido no coração da cidade.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="servicos">
+        <div class="servico">
+          <h3>Troca de Tela</h3>
+          <p>Telas quebradas? Trocamos com agilidade e garantia.</p>
+        </div>
+        <div class="servico">
+          <h3>Formatação e Limpeza</h3>
+          <p>Seu PC lento? Formatamos e otimizamos com segurança.</p>
+        </div>
+        <div class="servico">
+          <h3>Reparo de Placa</h3>
+          <p>Placas com defeito? Fazemos análise e reparo técnico.</p>
+        </div>
+        <div class="servico">
+          <h3>Atualização de Software</h3>
+          <p>Atualize seu Android ou Windows com segurança e sem perder dados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Fale Conosco</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea rows="5" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+      <p>📍 Rua Elmano Soares, 281 - Centro</p>
+      <p>📱 WhatsApp: <strong><a href="https://wa.me/5567991561044" target="_blank">(67) 99156-1044</a></strong></p>
+      <p>📸 Instagram: <a href="https://www.instagram.com/smartvisiontl" target="_blank">@smartvisiontl</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 SmartVision. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
